@@ -12,7 +12,7 @@
 	},
 	"pages": [
 		{
-			"webviewId": "__W2A__hello.wap2app.liuyingyong.cn",
+			"webviewId": "__W2A__hello.wap2app.dcloud.io",
 			"matchUrls": [
 				{
 					"pathname": "/"
@@ -25,11 +25,11 @@
 					"height": "50px",
 					"list": [
 						{
-							"url": "http://hello.wap2app.liuyingyong.cn/"
+							"url": "http://hello.wap2app.dcloud.io/"
 						}, {
-							"url": "http://hello.wap2app.liuyingyong.cn/list.html"
+							"url": "http://hello.wap2app.dcloud.io/list.html"
 						}, {
-							"url": "http://hello.wap2app.liuyingyong.cn/about.html"
+							"url": "http://hello.wap2app.dcloud.io/about.html"
 						}
 					]
 				}

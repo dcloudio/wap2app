@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<!--使用本地选项卡时，将如下两行代码注释取消-->
+		<link rel="stylesheet" type="text/css" href="__wap2apptabbar.css" />
+		<script src="__wap2apptabbar.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			/*自定义选项卡文字颜色示例*/
+			.tab-item {
+				color: black;//选项卡文字默认为黑色
+			}
+			.tab-item.active {
+				color: blue;//选项卡文字高亮时为蓝色
+			}
+		</style>
+	</head>
+
+	<body>
+
+	</body>
+
+	<script type="text/javascript">
+		//生成本地选项卡
+		new TabBar({
+			list: [{
+				url: "http://hello.wap2app.liuyingyong.cn/",
+				text: "首页",
+				iconPath: 'img/home-outline.png',
+				selectedIconPath: 'img/home-outline-highlight.png'
+			}, {
+				url: "http://hello.wap2app.liuyingyong.cn/list.html",
+				text: "示例",
+				iconPath: 'img/more.png',
+				selectedIconPath: 'img/more-highlight.png'
+			}, {
+				url: "http://hello.wap2app.liuyingyong.cn/about.html",
+				text: "关于",
+				iconPath: 'img/gear-outline.png',
+				selectedIconPath: 'img/gear-outline-highlight.png'
+			}]
+		});
+	</script>
+
+</html>

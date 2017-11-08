@@ -1,0 +1,26 @@
+{
+  "__wap2appcontext.html": {
+    "resources": [
+      "img/gear-outline-highlight.png",
+      "img/more.png",
+      "img/home-outline.png",
+      "img/gear-outline.png",
+      "img/home-highlight.png",
+      "img/more-highlight.png",
+      "img/home-outline-highlight.png"
+    ],
+    "refer": []
+  },
+  "client_index.html": {
+    "resources": [
+      "img/gear-outline-highlight.png",
+      "img/more.png",
+      "img/home-outline.png",
+      "img/gear-outline.png",
+      "img/more-highlight.png",
+      "img/home-outline-highlight.png",
+      "__wap2apptabbar.js",
+      "__wap2apptabbar.css"
+    ]
+  }
+}

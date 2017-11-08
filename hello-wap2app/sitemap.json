@@ -1,0 +1,39 @@
+{
+	"global": {
+		"webviewParameter": {
+			"titleNView": {
+				"backgroundColor": "#f7f7f7",
+				"titleColor": "#000000",
+				"titleSize": "17px",
+				"borderColor": "#cccccc"
+			},
+			"appendCss": ".mui-bar.mui-bar-tab{display: none;}"
+		}
+	},
+	"pages": [
+		{
+			"webviewId": "__W2A__hello.wap2app.liuyingyong.cn",
+			"matchUrls": [
+				{
+					"pathname": "/"
+				}, {
+					"pathname": ""
+				}
+			],
+			"webviewParameter": {
+				"tabBar": {
+					"height": "50px",
+					"list": [
+						{
+							"url": "http://hello.wap2app.liuyingyong.cn/"
+						}, {
+							"url": "http://hello.wap2app.liuyingyong.cn/list.html"
+						}, {
+							"url": "http://hello.wap2app.liuyingyong.cn/about.html"
+						}
+					]
+				}
+			}
+		}
+	]
+}

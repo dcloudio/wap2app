@@ -56,7 +56,6 @@ App({
 		plus.push.addEventListener("receive", function(msg) {
 			alert("receive: " + msg.content);
 		}, false);
-		
 		/******推送消息监听代码结束******/
 
 		

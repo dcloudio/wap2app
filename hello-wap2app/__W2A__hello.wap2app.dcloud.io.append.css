@@ -1,0 +1,9 @@
+.download,
+.mui-bar-tab
+ {
+	display: none;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top:44px!important;
+}

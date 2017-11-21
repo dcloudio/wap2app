@@ -1,0 +1,52 @@
+<template>
+	<nviews cachemaxage="0">
+		<nview style="background-color:#ffffff">
+			<list >
+				<item n-for="list in data.lists" style={{height:6.04*data.rem}}>
+					<canvas>
+						<img src={list.img} style={{width:'100%',height:4.783*data.rem,top:.16*data.rem}}/>
+						<font style={{left:0.31*data.rem,color:'#e4007f',size:.42667*data.rem,width:1.446*data.rem,height:1.09*data.rem,top:4.943*data.rem}}>{list.discount}折起</font>
+						<font style={{left:2.02*data.rem,color:'#000',size:.42667*data.rem,width:5.79*data.rem,height:1.09*data.rem,textOverflow:'ellipsis',top:4.943*data.rem}}>{list.title}</font>
+						<font style={{right:0.31*data.rem,color:'#a0a0a0',size:.37333*data.rem,width:data.rem,height:1.09*data.rem,top:4.943*data.rem}}>剩{list.brandtime}天</font>
+					</canvas>
+				</item>
+			</list>
+		</nview>
+	</nviews>
+</template>
+<script>	
+	/**
+	 *  参考文档【http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/12759】
+	 */
+	module.exports = {
+		data: function() {
+			var width = (window.plus && plus.screen.resolutionWidth) || (document.documentElement && document.documentElement.clientWidth);
+			if(width > 540) {
+				width = 540
+			}
+			return {
+				rem:width / 10,
+				lists:[]
+			}
+		},
+		init: function(url) { //url为新开webview加载的地址,可以通过url分析出部分业务参数
+		 /**
+		  *  支持通过wap2app.getFromWebService()方法动态从服务端获取数据 
+		  */
+			var self = this;//this作用域在回调函数中会变化，复制给变量self
+            //动态初始化数据
+            wap2app.getFromWebService({
+                url: 'http://hello.wap2app.dcloud.io/brand/list',
+                data: {},
+                type: 'get'
+            }, function(data) {
+            		self.data.lists = data.index;
+                //TODO 如果服务端返回数据格式和模板需要的格式不同，则需要做一下转换
+                self.setData(self.data);
+            })
+		},
+		methods: {
+			//方法
+		}
+	};
+</script>

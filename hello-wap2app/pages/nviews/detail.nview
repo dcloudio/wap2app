@@ -1,0 +1,36 @@
+<template>
+	<nviews cachemaxage="86400">
+		<nview id="detail_img" style="height:180px;">
+			<canvas style="width:100%; height:180px; top:0;">
+				<img src={data.cover} style="width:100%; height:200%;"/>
+			</canvas>
+			<richtext style="width:90%; position:absolute; left:5%; bottom:15px; height:40px;"> 
+				<font id="detail_title" style="color: #fff;font-size: 16px;">{data.title}</font>				
+			</richtext>
+		</nview>
+		<!--<nview id="detail_nview" style="height:50px; position:static; background-color:#efeff4; width: 60%;">
+			<canvas>
+				<font id="detail_title" style="left:20px; top:10px; height:30px; size:13px; color:#808080; align:left; whiteSpace:normal;">
+	                {data.author} 发表于 {data.time}
+	            </font>
+	            <img src="/images/share-icon.png" style="right:20px; top:15px; height: 20px; width: 20px;"/>
+			</canvas>
+		</nview>-->
+	</nviews>
+</template>
+<script>
+	module.exports = {
+		init: function(url) {
+			var self = this;
+			
+			wap2app.getFromCache('detail_cache', function(cacheData) {
+				if(cacheData){
+					self.setData(cacheData);						
+				}
+			})
+		},
+		methods: {
+			//方法
+		}
+	};
+</script>

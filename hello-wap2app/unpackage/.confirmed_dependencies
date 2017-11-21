@@ -1,26 +1,15 @@
 {
-  "__wap2appcontext.html": {
-    "resources": [
-      "img/gear-outline-highlight.png",
-      "img/more.png",
-      "img/home-outline.png",
-      "img/gear-outline.png",
-      "img/home-highlight.png",
-      "img/more-highlight.png",
-      "img/home-outline-highlight.png"
-    ],
-    "refer": []
-  },
   "client_index.html": {
     "resources": [
-      "img/gear-outline-highlight.png",
-      "img/more.png",
-      "img/home-outline.png",
-      "img/gear-outline.png",
-      "img/more-highlight.png",
-      "img/home-outline-highlight.png",
-      "__wap2apptabbar.js",
-      "__wap2apptabbar.css"
+      "js/plusShare.js",
+      "images/gear-outline-highlight.png",
+      "images/gear-outline.png",
+      "images/home-outline-highlight.png",
+      "images/home-outline.png",
+      "images/list-highlight.png",
+      "images/list.png",
+      "images/logo-256.png",
+      "images/share-icon.png"
     ]
   }
 }

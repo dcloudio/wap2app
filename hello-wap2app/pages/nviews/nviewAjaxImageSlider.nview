@@ -1,0 +1,34 @@
+<template>
+	<nviews cachemaxage="0">
+		<nview  style={{backgroundColor:'#ffffff',height:data.rem * 7.6,width:'100%'}}>
+			<imageslider images={data.imgs}></imageslider>
+		</nview>
+	</nviews>
+</template>
+<script>
+	module.exports = {
+		data: function() {
+			var width = (window.plus && plus.screen.resolutionWidth) || (document.documentElement && document.documentElement.clientWidth);
+			if(width > 540) {
+				width = 540
+			}
+			return {
+				rem:width / 10,
+				imgs:[]
+			}
+		},
+		init: function(url) {
+			var self = this;//this作用域在回调函数中会变化，复制给变量self
+            //动态初始化数据
+            wap2app.getFromWebService({
+                url: 'http://hello.wap2app.dcloud.io/brand/list',
+                data: {},
+                type: 'get'
+            }, function(data) {
+            		self.data.imgs = data.imgSlider;
+                //TODO 如果服务端返回数据格式和模板需要的格式不同，则需要做一下转换
+                self.setData(self.data);
+            })
+		}
+	};
+</script>

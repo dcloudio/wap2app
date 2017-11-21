@@ -10,39 +10,39 @@
 		<script src="__wap2apptabbar.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			/*自定义选项卡文字颜色示例*/
+			
 			.tab-item {
-				color: black;//选项卡文字默认为黑色
+				color: #000; //选项卡文字默认颜色
 			}
+			
 			.tab-item.active {
-				color: blue;//选项卡文字高亮时为蓝色
+				color: #007aff; //选项卡文字高亮时颜色
 			}
 		</style>
 	</head>
 
 	<body>
-
+		<script>
+			//生成本地选项卡
+			new TabBar({
+				list: [{
+					url: "http://hello.wap2app.dcloud.io/",
+					text: "首页", //本地路径，也可以是网络路径
+					iconPath: 'images/home-outline.png',
+					selectedIconPath: 'images/home-outline-highlight.png'
+				}, {
+					url: "http://hello.wap2app.dcloud.io/list.html",
+					text: "示例",
+					iconPath: 'images/list.png',
+					selectedIconPath: 'images/list-highlight.png'
+				}, {
+					url: "http://hello.wap2app.dcloud.io/about.html",
+					text: "关于",
+					iconPath: 'images/gear-outline.png',
+					selectedIconPath: 'images/gear-outline-highlight.png'
+				}]
+			});
+		</script>
 	</body>
-
-	<script type="text/javascript">
-		//生成本地选项卡
-		new TabBar({
-			list: [{
-				url: "http://hello.wap2app.liuyingyong.cn/",
-				text: "首页",
-				iconPath: 'img/home-outline.png',
-				selectedIconPath: 'img/home-outline-highlight.png'
-			}, {
-				url: "http://hello.wap2app.liuyingyong.cn/list.html",
-				text: "示例",
-				iconPath: 'img/more.png',
-				selectedIconPath: 'img/more-highlight.png'
-			}, {
-				url: "http://hello.wap2app.liuyingyong.cn/about.html",
-				text: "关于",
-				iconPath: 'img/gear-outline.png',
-				selectedIconPath: 'img/gear-outline-highlight.png'
-			}]
-		});
-	</script>
 
 </html>

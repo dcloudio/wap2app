@@ -57,9 +57,11 @@
 		<script type="text/javascript">
 			(function() {
 				if(navigator.userAgent.indexOf("Html5Plus") > -1) {
-					document.querySelector('.version').style.display = 'block';
 					plusReady(function() {
-						document.querySelector('.version-num').innerText = plus.runtime.version;
+						if(plus.runtime.version.indexOf('_') < 0) {
+							document.querySelector('.version').style.display = 'block';
+							document.querySelector('.version-num').innerText = plus.runtime.version;
+						}
 					});
 				}
 				
@@ -74,7 +76,7 @@
 						}, false);
 					}
 				}
-			})
+			})()
 		</script>
 	</body>
 

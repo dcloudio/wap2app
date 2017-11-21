@@ -9,7 +9,9 @@
       "images/list-highlight.png",
       "images/list.png",
       "images/logo-256.png",
-      "images/share-icon.png"
+      "images/share-icon.png",
+      "__W2A__hello.wap2app.dcloud.io.append.css",
+      "app.js"
     ]
   }
 }

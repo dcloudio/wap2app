@@ -244,7 +244,7 @@
 				}
 			],
 			"webviewParameter": {
-				"appendJs": "pages/nviews/list1.js"
+				"appendJs": "js/list.js"
 			},
 			"easyConfig": {
 				"open": {
@@ -262,7 +262,7 @@
 				"titleNView": {
 					"titleText": "新闻详情"
 				},
-				"subNViews": "pages/nviews/detail.nview"
+				"subNViews": "pages/detail/detail.nview"
 			}
 		}, {// ajax获取服务端数据 - 列表页
 			"webviewId": "nviewAjax",
@@ -282,7 +282,7 @@
 				"titleNView": {
 					"titleText":"电商首页列表页"
 				},
-				"subNViews": "pages/nviews/nviewAjaxIndex.nview"
+				"subNViews": "pages/list/nviewAjaxIndex.nview"
 			}
 		}, {// ajax获取服务端数据 - 电商商品列表页
 			"webviewId": "nviewAjaxGoods",
@@ -292,8 +292,7 @@
 				}
 			],
 			"webviewParameter": {
-				"subNViews": "pages/nviews/nviewAjaxList.nview",
-				"appendCss": "",
+				"subNViews": "pages/list/nviewAjaxList.nview",
 				"titleNView": {
 					"titleText":"电商商品列表页",
 					"buttons": [
@@ -323,10 +322,11 @@
 			"webviewParameter": {
 				"titleNView": {
 					"titleText": "原生轮播图",
+					"backgroundColor":"#FFFFFF",
 					"type": "transparent",
-					"backgroundColor": "#FFFFFF",
 					"splitLine": {
-						"height": 0
+						"height": 0,
+						"color":"#FFFFFF"
 					},
 					"buttons": [
 						{
@@ -344,7 +344,7 @@
 						}
 					]
 				},
-				"subNViews": "pages/nviews/nviewAjaxImageSlider.nview",
+				"subNViews": "pages/list/nviewAjaxImageSlider.nview",
 				"appendCss": "#J-back-prev-page,.J-detail-collect-btn,.J-btn-share{display:none!important;} .product-attr tr td:first-child{width:auto!important;}"
 			}
 		}, {// 视频全屏播放

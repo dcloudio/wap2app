@@ -5,9 +5,9 @@
 		"iPad"
 	],
 	"id": "__W2A__hello.wap2app.dcloud.io",/*应用的标识，创建应用时自动生成，勿手动修改*/
-	"name": "hello-wap2app",/*应用名称，程序桌面图标名称*/
+	"name": "hello wap2app",/*应用名称，程序桌面图标名称*/
 	"version": {
-		"name": "1.0",/*应用版本名称*/
+		"name": "0.1.0",/*应用版本名称*/
 		"code": ""
 	},
 	"description": "wap2app各功能配置示例",/*应用描述信息*/
@@ -203,35 +203,27 @@
 		}
 	},
 	"dependencies": {
-		"pages": {
-			"client_index.html": {
-				"resources": [
-					"images/gear-outline-highlight.png",
-					"images/gear-outline.png",
-					"images/home-outline-highlight.png",
-					"images/home-outline.png",
-					"images/list-highlight.png",
-					"images/list.png",
-					"images/logo-256.png",
-					"images/share-icon.png"
-				],
-				"refer": [],
-				"priority": 0
-			}
-		},
-		"idle": {
-			"resources": [
-				"pages/subNView/detail.nview",
-				"pages/subNView/detail.js",
-				"images/list-selected.png",
-				"images/home-selected.png",
-				"images/about.png",
-				"sitemap.json",
-				"images/home.png",
-				"__W2A__hello.wap2app.dcloud.io.append.css",
-				"app.js",
-				"images/about-selected.png"
-			]
-		}
+	  "pages": {
+	    "client_index.html": {
+	      "resources": [],
+	      "refer": [],
+	      "priority": 0
+	    }
+	  },
+	  "idle": {
+	    "resources": [
+	      "pages/detail/detail.nview",
+	      "pages/list/nviewAjaxList.nview",
+	      "js/list.js",
+	      "sitemap.json",
+	      "js/full-screen.js",
+	      "fonts/mui.ttf",
+	      "fonts/iconfont.ttf",
+	      "__W2A__hello.wap2app.dcloud.io.append.css",
+	      "pages/list/nviewAjaxIndex.nview",
+	      "pages/list/nviewAjaxImageSlider.nview",
+	      "app.js"
+	    ]
+	  }
 	}
 }

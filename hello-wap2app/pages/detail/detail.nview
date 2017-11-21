@@ -8,14 +8,6 @@
 				<font id="detail_title" style="color: #fff;font-size: 16px;">{data.title}</font>				
 			</richtext>
 		</nview>
-		<!--<nview id="detail_nview" style="height:50px; position:static; background-color:#efeff4; width: 60%;">
-			<canvas>
-				<font id="detail_title" style="left:20px; top:10px; height:30px; size:13px; color:#808080; align:left; whiteSpace:normal;">
-	                {data.author} 发表于 {data.time}
-	            </font>
-	            <img src="/images/share-icon.png" style="right:20px; top:15px; height: 20px; width: 20px;"/>
-			</canvas>
-		</nview>-->
 	</nviews>
 </template>
 <script>

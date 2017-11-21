@@ -56,6 +56,7 @@ App({
 		plus.push.addEventListener("receive", function(msg) {
 			alert("receive: " + msg.content);
 		}, false);
+		
 		/******推送消息监听代码结束******/
 
 		
@@ -107,28 +108,4 @@ Page('pullToRefresh-custorm', { // 自定义下拉刷新
 	onClose: function() {
 
 	}
-});
-
-// 参考文档 【http://ask.dcloud.net.cn/article/34】
-wap2app.plusReady(function() {
-	//	//个推消息-click事件监听
-	//	plus.push.addEventListener("click", function(msg) {
-	//		console.log("You clicked: " + msg.title); //推送消息显示的标题
-	//		console.log("You clicked: " + msg.content); //推送消息显示的内容
-	//		console.log("You clicked: " + msg.payload); //推送消息承载的数据,可以是字符串或者json 
-	//
-	//		//根据payload传递过来的数据，打开一个详情
-	//		var rs = JSON.parse(msg.payload);
-	//		if(rs && rs.id) {
-	//			var detailId = rs.id;
-	//			alert("click: " + detailId);
-	//			wap2app.open('http://hello.wap2app.dcloud.io/examples/detail.html?guid=' + detailId);
-	//		}
-	//
-	//	}, false);
-
-	//个推消息-receive事件监听
-	plus.push.addEventListener("receive", function(msg) {
-		alert("receive: " + msg.content);
-	}, false);
 });

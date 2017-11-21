@@ -1,5 +1,5 @@
 <template>
-	<nviews cachemaxage="0">
+	<nviews cachemaxage="86400">
 		<nview  style={{backgroundColor:'#ffffff',height:data.rem * 7.6,width:'100%'}}>
 			<imageslider images={data.imgs}></imageslider>
 		</nview>
@@ -21,11 +21,11 @@
 			var self = this;//this作用域在回调函数中会变化，复制给变量self
             //动态初始化数据
             wap2app.getFromWebService({
-                url: 'http://hello.wap2app.dcloud.io/brand/list',
+                url: 'http://hello.wap2app.dcloud.io/brand/detail',
                 data: {},
                 type: 'get'
             }, function(data) {
-            		self.data.imgs = data.imgSlider;
+            		self.data.imgs = data;
                 //TODO 如果服务端返回数据格式和模板需要的格式不同，则需要做一下转换
                 self.setData(self.data);
             })

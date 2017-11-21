@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<title>电商类详情图片轮播-示例wap页面</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/nview-detail.css" />
+		<script src="../js/resize.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<div id="J-detail-p-relative" class="p-relative">
+			<div id="J-back-previous-page">
+				<!-- 返回前页按钮 -->
+				<a href="javascript:history.go(-1)" class="back-prev-page" id="J-back-prev-page" mars_sead="home_top_back_btn">
+					<i class="icon-back mui-icon mui-icon-arrowleft"></i>
+				</a>
+				<!-- 返回前页按钮End -->
+			</div>
+
+			<div id="J-product-img-slider">
+				<div id="slider" class="p-relative wrap-product-img-slider mui-slider" style="visibility: visible;height: 7.6rem;">
+					<ul id="J-product-images" class="mui-slider-loop mui-slider-group product-detail">
+						<li class="item mui-slider-item mui-slider-item-duplicate">
+							<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-4_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-4.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装" class="small-img" mars_sead="product_big_pic">
+						</li>
+						<li class="item mui-slider-item" data-index="0">
+							<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1_473x598_80.jpg" data-original="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装" class="small-img" mars_sead="product_big_pic" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						</li>
+						<li class="item mui-slider-item" data-index="1">
+							<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-2_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-2.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装" class="small-img" mars_sead="product_big_pic">
+						</li>
+						<li class="item mui-slider-item" data-index="2">
+							<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-3_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-3.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装" class="small-img" mars_sead="product_big_pic">
+						</li>
+						<li class="item mui-slider-item" data-index="3">
+							<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-4_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-4.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装" class="small-img" mars_sead="product_big_pic">
+						</li>
+						<li class="item mui-slider-item mui-slider-item-duplicate">
+							<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1_473x598_80.jpg" data-original="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装" class="small-img" mars_sead="product_big_pic" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						</li>
+					</ul>
+					<div class="carousel-indicators mui-slider-indicator" id="J-indicators">
+						<i class="mui-indicator mui-active"></i>
+						<i class="mui-indicator"></i>
+						<i class="mui-indicator"></i>
+						<i class="mui-indicator"></i>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="J-coupon-banner">
+
+				<div>
+					<!--本组件变量池 start-->
+					<input type="hidden" id="J-brand-id" value="1286440">
+					<input type="hidden" id="J-show-brandcoupon" value="">
+					<input type="hidden" id="J-brand-name" value="铭氏咖啡专场">
+					<input type="hidden" id="J-coupon-list" value="">
+					<!--本组件变量池 end-->
+					<div id="J-coupon-wrap">
+						<!--优先展示品牌券 wap&微信同一套逻辑-->
+					</div>
+				</div>
+
+			</div>
+
+			<div id="J-send-gift">
+
+			</div>
+
+			<div id="J-adv-new-customer">
+
+			</div>
+		</div>
+
+		<div id="J-adv-new-customer">
+
+		</div>
+
+		<div id="J-product-zoom-img-slider">
+			<div class="product-zoom-img-box" id="J-product-zoom-img-box">
+				<div class="product-zoom-img-modal">
+					<div class="modal-body" id="J-product-zoom-img-modal">
+						<ul class="clearfix">
+							<li data-dismiss="closeModal" class="f-left">
+								<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1_473x598_80.jpg" data-original="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+							</li>
+							<li data-dismiss="closeModal" class="f-left">
+								<img src="//ms2-m.vipstatic.com/static/base/img/loading-goods-a25fb09a3e.png" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-2_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-2.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装">
+							</li>
+							<li data-dismiss="closeModal" class="f-left">
+								<img src="//ms2-m.vipstatic.com/static/base/img/loading-goods-a25fb09a3e.png" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-3_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-3.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装">
+							</li>
+							<li data-dismiss="closeModal" class="f-left">
+								<img src="//ms2-m.vipstatic.com/static/base/img/loading-goods-a25fb09a3e.png" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-4_473x598_80.jpg" data-onerror="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-4.jpg" alt="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装">
+							</li>
+						</ul>
+					</div>
+					<nav>
+						<ul id="J-photo-pagination" class="photo-pagination">
+							<i id="sel1" class="on" mars_sead="product_big_pic">1</i>
+							<i id="sel2" mars_sead="product_big_pic">2</i>
+							<i id="sel3" mars_sead="product_big_pic">3</i>
+							<i id="sel4" mars_sead="product_big_pic">4</i>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="J-product-meta">
+			<div class="product-meta">
+				<div class="price-box">
+					<div class="price-info-list clearfix">
+						<p class="J-sale-price sale-price f-left"><i class="f-left">¥</i><span>49</span></p>
+						<p class="J-market-price market-price f-left"><i class="f-left">¥</i><del>110</del></p>
+						<p class="J-vip-discount vip-discount f-left">4.5折</p>
+						<div class="u-btn-share-wrap clearfix">
+							<input type="hidden" id="J-product-id" value="">
+							<input type="hidden" id="J-product-name" value="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装">
+							<input type="hidden" id="J-vip-price" value="">
+							<input type="hidden" id="J-share-img" value="">
+							<!-- 分享 -->
+							<div mars_sead="share_click_btn" class="f-right btn-share J-btn-share" id="share"><i class="icon-share"></i></div>
+							<!-- 收藏 -->
+							<div id="addcollect" class="f-right J-detail-collect-btn product-detail-collect icon-addcollect" data-luxury="0" style="display: block;"></div>
+							<div  class="f-right J-detail-notcollect-btn product-detail-notcollect icon-heart-ed" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+				<h1 class="product-name " data-classify="铭氏咖啡专场">
+		Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装
+    </h1>
+			</div>
+
+		</div>
+		<div id="J-product-color">
+
+		</div>
+
+		<div id="J-product-size">
+			<div class="product-size J-product-size border-b">
+				<h1>
+                    规格
+            </h1>
+				<ul id="J-product-size-list" class="product-size-list clearfix ">
+
+					<li data-size="552097950" data-isluxury="0" data-sku_name="均码" class="J-size-list-item size-list-item
+                    choose                     selected icon-filter-checked                                        " data-disable="" data-maxamount="12" data-minamount="1" data-sizestock="12" data-favourite="0" data-promotionprice="" data-luxuryprice="" data-originalprice="" data-surprisepriceflag="0" data-vipprice="49" data-marketprice="110" data-vipdiscount="4.5折" data-prepay-tips="" data-prepay-begintime="" data-prepay-endtime="" data-finalpay-begintime="" data-finalpay-endtime="" data-prepay-amount="" data-finalpay-amount="">
+						<span class="size">均码</span>
+						<!-- 有标识 且不是专享价商品，才显示有货提醒文案 -->
+					</li>
+
+					<!-- 点击尺码提示组件：product-size-popup -->
+
+				</ul>
+				<!-- 查看尺码表 -->
+				<!-- 提示 -->
+				<p class="error-tips">请先选择尺码</p>
+				<!-- data -->
+				<input type="hidden" name="channel_id" value="">
+				<input type="hidden" class="J-brand-id" name="brand_id" value="1286440">
+				<input type="hidden" class="J-spu-id" name="spu_id" value="298721445405397007">
+				<input type="hidden" name="product_id" value="213490161">
+				<input type="hidden" name="cat_id" value="">
+				<input type="hidden" name="warehouse" value="VIP_BJ">
+				<input type="hidden" name="product_name" value="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装">
+				<input type="hidden" name="small_image" value="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-5.jpg">
+				<input type="hidden" name="agio" value="4.5折">
+				<input type="hidden" name="back_url" value="">
+			</div>
+
+		</div>
+
+		<div id="J-product-number">
+			<div class="u-product-number J-product-number ui-border-b" style="display: none;">
+				<div class="u-number-wrap">
+					数量<span id="J-count-tip" class="number-tip"></span>
+					<ul class="u-number-box clearfix" style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<li class="u-number-btn" id="J-reduce-btn"><i class="icon-minus"></i></li>
+						<li class="number" id="J-number">1</li>
+						<li class="u-number-btn" id="J-add-btn"><i class="icon-plus"></i></li>
+					</ul>
+					<div class="u-number-content" style="display: none;"></div>
+				</div>
+				<input type="hidden" id="J-num-max" value="12">
+				<input type="hidden" id="J-num-min" value="1">
+				<input type="hidden" id="J-size-stock" value="12">
+				<input type="hidden" id="J-is-independent" value="0">
+			</div>
+
+		</div>
+
+		<div id="J-product-service-text">
+			<div class="product-service-text border-b">
+				<div class="service-list" id="J-service-more">
+					<ul>
+						<li>
+							<i class="icon-circle-check"></i> 7天包退
+						</li>
+						<li>
+							<i class="icon-circle-check"></i> 退货返运费
+						</li>
+					</ul>
+
+					<div class="more">
+						<span>·</span><span>·</span><span>·</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="J-product-tab">
+			<div class="u-product-tab">
+			</div>
+		</div>
+		<div id="J-wrap-product-detail-info">
+			<div id="J-product-attr">
+				<div class="product-attr">
+					<h3 id="J-pro-param-scroll">商品信息</h3>
+
+					<table>
+						<tbody>
+							<tr class="product-attr-item">
+								<td>品牌名称：</td>
+								<td>铭氏</td>
+							</tr>
+							<tr class="product-attr-item">
+								<td>商品名称：</td>
+								<td>Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装</td>
+							</tr>
+							<tr class="product-attr-item">
+								<td>产地：</td>
+								<td>上海</td>
+							</tr>
+							<tr class="product-attr-item">
+								<td>材质：</td>
+								<td>精致白砂糖、植脂末、速溶咖啡</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+
+			<div id="J-product-extra">
+				<div class="product-extra">
+					<div class="border-tb entrance-and-consult clearfix">
+						<!-- 档期入口  -->
+						<a class="brand-entrance border-r" href="javascript:void(0)" mars_sead="rec-brand_btn">
+							<span>进入专场</span>
+							<i class="entrance-icon icon-arrow-down"></i>
+						</a>
+						<!-- 档期入口 -->
+
+						<!-- 购物咨询页入口 -->
+						<a class="shopping-consult" href="javascript:void(0)" mars_sead="goods-detail-consultclick_btn">
+							<span>购物咨询</span>
+							<i class="entrance-icon icon-arrow-down"></i>
+						</a>
+						<!-- END购物咨询页入口 -->
+					</div>
+				</div>
+
+			</div>
+
+			<div id="J-adv-wx-share"></div>
+
+			<div id="J-product-presell">
+
+			</div>
+
+			<div id="J-product-price-line" style="display: none;">
+
+			</div>
+
+			<div id="J-product-detail-img">
+				<div class="product-detail-img" id="J-product-detail-img">
+					<h3 id="J-img-scroll">商品图片</h3>
+					<div class="product-img-body">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-601.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-601.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-602.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-602.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-603.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-603.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-604.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-604.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-605.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-605.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-606.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-606.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-607.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-607.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-608.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-608.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+						<img src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-611.jpg" data-img-src="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-611.jpg" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="J-wrap-product-comment"></div>
+
+		<div id="J-foot-toolbar">
+
+		</div>
+
+		<div id="J-wx-behavior">
+			<input type="hidden" value="" id="J-enable-wxbehavior">
+		</div>
+
+		<div id="J-wx-share">
+			<input type="hidden" id="J-wxs-brandname" value="铭氏咖啡专场"><input type="hidden" id="J-wxs-productname" value="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装"><input type="hidden" id="J-wxs-brandid" value="1286440"><input type="hidden" id="J-wxs-vipprice" value="49"><input type="hidden" id="J-wxs-marketprice" value="110"><input type="hidden" id="J-wxs-agio" value="4.5折">
+
+			<input type="hidden" id="J-wxs-img" value="//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-5.jpg">
+		</div>
+
+		<div id="J-autochange-warehouse">
+			<input type="hidden" id="J-default-warehouse" value="VIP_BJ">
+			<input type="hidden" id="J-default-area" value="北京">
+		</div>
+
+		<div id="J-detail-smart-warehouse">
+			<input type="hidden" id="J-cwh-iscross" value="0">
+			<input type="hidden" id="J-cwh-issale" value="0">
+			<input type="hidden" id="J-cwh-brandid" value="1286440">
+
+		</div>
+
+		<div id="J-cart-fixed-bottom">
+			<div class="cart-fixed-bottom-wrap">
+				<!-- 如果不是预付商品，才显示底部购物车 -->
+				<div class="fixed-bottom J-cart-fixed-bottom">
+
+					<div class="cart-tips clearfix" id="J-cart-tips">
+						<p class="f-left">商品只在购物车停留20分钟</p>
+						<a class="f-right" href="&#10;                                                                        https://mcheckout.vip.com/cart.html&#10;                                            " mars_sead="tips-count-now_btn">立即结算</a>
+					</div>
+
+					<!-- 独立成单，显示立即抢购，即一键购 -->
+
+					<!--普通购物车流程-->
+					<div class="shoppingcar ui-border-t empty" id="J-shoppingcar">
+						<div class="cart-box">
+							<a href="javascript:void(0)">
+								<div class="count-of-car J-count-of-car">
+									<span class="count J-count">0</span>
+									<i class="icon-cart J-car"></i>
+								</div>
+								<span class="countdown J-cuntdown" data-cleartime="" data-hascart=""></span>
+							</a>
+						</div>
+
+						<div class="submit-box J-submit-box ">
+							<a class="btn btn-large btn-purple J-submit-box-btn " data-shopcarthide="true" mars_sead="product_add_cart_btn" data_mars="prd_id:213490161" data-isindependent="0" data-bid="1286440">加入购物车</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="J-product-preheat-collect" class="hide">
+			<div id="J-product-collect-wrap" class="product-collect-wrap">
+				<div class="preheat-collect-box ">
+					<a href="javascript:;" class="J-collect-btn collect-btn " mars_sead="brand-preheating_product-detail_remind_btn" style="display: block;">收藏</a>
+					<a href="javascript:;" class="J-notcollect-btn notcollect-btn " style="display: none;">已收藏</a>
+				</div>
+
+			</div>
+			<input type="hidden" value="1" id="J-product-preheat-status">
+
+		</div>
+
+		<div id="J-vtm">
+			<input type="hidden" id="J-vtm-enable" value="1">
+			<input type="hidden" id="J-vtm-hash" value="5535b232">
+			<input type="hidden" id="J-vtm-product-id" value="213490161">
+			<input type="hidden" id="J-vtm-product-name" value="Mings铭氏焦糖玛奇朵速溶咖啡30支立袋装">
+			<input type="hidden" id="J-vtm-agio" value="4.5折">
+			<input type="hidden" id="J-vtm-sale-price" value="49">
+			<input type="hidden" id="J-vtm-market-price" value="110">
+			<input type="hidden" id="J-vtm-sell-time-to" value="1501466340000">
+			<input type="hidden" id="J-vtm-brand-id" value="1286440">
+			<input type="hidden" id="J-vtm-brand-name" value="铭氏咖啡专场">
+			<input type="hidden" id="J-vtm-category-id" value="">
+
+		</div>
+
+		<div id="J-browser-history">
+			<input type="hidden" id="J-bh-islogin" value="">
+		</div>
+
+		<div id="J-share">
+			<input id="J-is-login" value="0" type="hidden">
+			<input id="J-is-phone" value="" type="hidden">
+			<input id="J-is-share" value="" type="hidden">
+			<input id="J-mst-url" value="" type="hidden">
+			<div class="u-share-button J-btn-rebate-share"></div>
+			<div class="u-wechat-share-wrap" id="J-wechat-share">
+				<div class="u-wechat-share"></div>
+			</div>
+
+		</div>
+
+		<div id="J-app-wakeup">
+			<input type="hidden" class="J-wakeup-enable" value="1">
+			<input type="hidden" class="J-wakeup-show-popup" value="0">
+			<input type="hidden" class="J-wakeup-show-ios-popup" value="0">
+			<input type="hidden" class="J-wakeup-android-url" value="vipshop://showGoodsDetail?goodsId=213490161&amp;brandId=1286440&amp;tra_from=m%3Aa%3A1493190482000_33d01e038f862d05f7981c86ae761b04%3Aa%3A%3A&amp;from=m&amp;device=a&amp;cid=1493190482000_33d01e038f862d05f7981c86ae761b04&amp;f=&amp;other=">
+			<input type="hidden" class="J-wakeup-iphone-url" value="vipshop://showGoodsDetail?goodsId=213490161&amp;brandId=1286440&amp;tra_from=m%3Ai%3A1493190482000_33d01e038f862d05f7981c86ae761b04%3Aa%3A%3A&amp;from=m&amp;device=i&amp;cid=1493190482000_33d01e038f862d05f7981c86ae761b04&amp;f=&amp;other=">
+			<input type="hidden" class="J-wakeup-coolinghour-fail" value="0">
+			<input type="hidden" class="J-wakeup-coolinghour-success" value="0">
+		</div>
+		<div id="J-warehouse-win-pop" class="popup warehouse-win-pop"></div>
+		<div id="mask1499051784073" class="mask"></div>
+		<div id="J-toast" class="toast"></div>
+		<div id="J-smart-wh-win" class="popup dialog none smart-wh-win">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div id="J-dialog1499051784081" class="popup dialog none">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div id="J-dialog1499051784082" class="popup dialog none">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div id="J-dialog1499051784083" class="popup dialog none">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div id="J-coupon-win-pop" class="popup dialog none coupon-win-pop">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div id="J-dialog1499051784085" class="popup dialog none">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div id="product-remind-dialog" class="popup dialog none">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div id="shareDialog" class="popup dialog none">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div id="appWakeupDialog" class="popup dialog none app-wakeup-dialog">
+			<h3 class="dialog-title"></h3>
+			<section class="dialog-body"></section>
+			<section class="dialog-foot border-t"></section>
+		</div>
+		<div class="u-cart-add-animation" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none; background-image: url(&quot;//a.vimage1.com/upload/merchandise/pdc/007/397/298721445405397007/0/6950869006450-1_473x598_80.jpg&quot;); background-color: transparent;"></div>
+		<a href="#top" class="backtop J-gotop none add-bottom" mars_sead="home_foot_top_btn" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+			<i class="icon-up"></i>
+		</a>
+
+		<div id="mg-toast" class="mg-toast"></div>
+		<div id="mg-mask" class="mg-mask none" marsseadclick=""></div>
+		<div id="mg-dialog" class="mg-dialog mg-popup none" marsseadclick="">
+			<h3 class="mg-dialog-title"></h3>
+			<section class="mg-dialog-body"></section>
+			<section class="mg-dialog-foot"></section>
+		</div>
+		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var slider = mui("#slider");
+			slider.slider({
+				interval: 0
+			});
+			
+			window.addEventListener('click', function(e){
+				var target = e.target;
+				for(;target && target !== document; target = target.parentNode) {
+					if(target.id == 'share') {
+						alert('你点击了分享按钮');
+					}else if(target.id == 'addcollect') {
+						alert('你点击了添加收藏按钮');
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

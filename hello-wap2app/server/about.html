@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello wap2app</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<style type="text/css">
+			body,
+			.mui-content {
+				background-color: #fff;
+			}
+			
+			.version {
+				display: none;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">关于</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="list.html">
+				<span class="mui-icon mui-icon-more"></span>
+				<span class="mui-tab-label">示例</span>
+			</a>
+			<a class="mui-tab-item mui-active">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">关于</span>
+			</a>
+		</nav>
+		<div class="mui-content mui-content-padded">
+			
+			<p>
+				wap2app -- 将M站快速转换成App的开发框架,达到原生的功能和体验
+			</p>
+			<br/>
+			<b>主要特点如下：</b>
+			<ul>
+				<li>体验好：wap2app利用原生渲染技术，实现了和原生App一样的用户体验</li>
+				<li>功能强：wap2app底层基于HTML5 PLUS引擎，可以调用几十万原生API，实现更强的推送、分享、支付、定位等系统能力，可实现和原生App一样的功能要求</li>
+				<li>快速开发：基于json文件快速配置，规则简单，学习成本低，工作量少</li>
+				<li>免费：与DCloud的所有开发者产品一样，wap2app也是一个纯免费的工具，开发、打包全免费！</li>
+			</ul>
+
+			<p class="mui-text-center version">当前版本：<span class="version-num">0.1.0</span></p>
+		</div>
+		<script type="text/javascript">
+			(function() {
+				if(navigator.userAgent.indexOf("Html5Plus") > -1) {
+					document.querySelector('.version').style.display = 'block';
+					plusReady(function() {
+						document.querySelector('.version-num').innerText = plus.runtime.version;
+					});
+				}
+				
+				function plusReady(callback) {
+					if(window.plus) {
+						setTimeout(function() { //解决callback与plusready事件的执行时机问题(典型案例:showWaiting,closeWaiting)
+							callback();
+						}, 0);
+					} else {
+						document.addEventListener("plusready", function() {
+							callback();
+						}, false);
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

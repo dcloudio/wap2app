@@ -1,0 +1,26 @@
+[
+{
+    "img": "http://hello.wap2app.dcloud.io/img/ias_1.jpg",
+    "discount": "1",
+    "title": "德国Marc O'Polo轻奢服饰专场",
+    "brandtime": "4"
+},
+{
+    "img": "http://hello.wap2app.dcloud.io/img/ias_2.jpg",
+    "discount": "1.1",
+    "title": "歌中歌Song of Song女装专场",
+    "brandtime": "2"
+},
+{
+    "img": "http://hello.wap2app.dcloud.io/img/ias_3.jpg",
+    "discount": "1",
+    "title": "诗篇PSALTER女装专场",
+    "brandtime": "1"
+},
+{
+    "img": "http://hello.wap2app.dcloud.io/img/ias_4.jpg",
+    "discount": "1.4",
+    "title": "百丽BeLLE男女鞋专场",
+    "brandtime": "2"
+}
+]

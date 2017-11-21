@@ -1,0 +1,36 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>改变页面回退逻辑</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<link href="../css/mui.min.css" rel="stylesheet">
+		<!--<link rel="stylesheet" type="text/css" href="../css/list-to-detail.css?v=1">-->
+		<style type="text/css">
+			.banner {
+				/*background: #fff;*/
+				padding: 20px;
+			}
+			.news {
+				padding: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.back()"></a>
+			<h1 class="mui-title">改变页面回退逻辑-示例</h1>
+		</header>
+		<div class="mui-content">
+			<p class="banner">
+				这是 back-> history后退逻辑演示示例页面。 
+				<br/>
+				<br/>点击下方 <b style="color:black;">相关阅读</b>, 会跳转到一个类似页面，在wap2app中，因为跳转url与当前页面属于同一组webview配置，所以不会新开页面，直接执行location.href跳转。back键返回时，默认执行history.back()回到上一页，这种体验对于原生app来说不好。<br/><br/> 在wap2app示例中，我们可以将back -> history 设置为false，不走默认逻辑，直接关闭窗口。
+				<a href="page2.html" style="display: block;margin-top: 20px;">相关阅读</a>
+			</p>
+		</div>
+
+	</body>
+
+</html>

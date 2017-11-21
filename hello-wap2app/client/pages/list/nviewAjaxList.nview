@@ -40,7 +40,6 @@
 		</nview>
 		<nview style={{backgroundColor:'#ffffff',height:35}}>
 			<canvas>
-				<!--<font style="width:78%;height:35px;color:#e80080;font-size:12px;left:2%;align:left">购物即享折上9折，满2件即享8折,全场满￥88免邮</font>-->
 				<font style="width:50px;align:right;height:35px;color:#999;font-size:12px;right:2%">剩2天</font>
 			</canvas>
 		</nview>
@@ -79,11 +78,11 @@
 			var self = this;//this作用域在回调函数中会变化，复制给变量self
             //动态初始化数据
             wap2app.getFromWebService({
-                url: 'http://hello.wap2app.dcloud.io/brand/list',
+                url: 'http://hello.wap2app.dcloud.io/brand/goods',
                 data: {},
                 type: 'get'
             }, function(data) {
-            		self.data.lists = data.list;
+            		self.data.lists = data;
                 //TODO 如果服务端返回数据格式和模板需要的格式不同，则需要做一下转换
                 self.setData(self.data);
             })

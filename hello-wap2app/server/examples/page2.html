@@ -1,0 +1,34 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>改变页面回退逻辑-相关阅读</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<link href="../css/mui.min.css" rel="stylesheet">
+		<!--<link rel="stylesheet" type="text/css" href="../css/list-to-detail.css">-->
+		<style type="text/css">
+			.mui-content {
+				margin: 20px;
+			}
+			p {
+				 line-height: 1.7;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.back()"></a>
+			<h1 class="mui-title">改变页面回退逻辑-相关阅读</h1>
+		</header>
+		<div class="mui-content">
+			<p>这是相关阅读的跳转页面</p>
+			<p>是和上一页面同一组webview配置。此时不开新窗体，会在一个Webview里跳转</p>
+			<p>若此时用户按下back按键，则会在webview内执行history.back()，返回到上一个页面，并不会直接关闭当前webview</p>
+			<p>如果此时，希望用户按下back时，不执行history.back()，而是直接关闭webview，返回到上一层webview，则可以通过easyConfig的back下的设置history配置实现</p>
+			
+		</div>
+
+	</body>
+
+</html>

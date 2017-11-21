@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello wap2app</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<style type="text/css">
+			body,
+			.mui-content {
+				background-color: #fff;
+				font-size: 14px;
+			}
+			
+			.mui-content>.mui-table-view:first-child {
+				margin-top: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">功能示例</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="list.html">
+				<span class="mui-icon mui-icon-more"></span>
+				<span class="mui-tab-label">示例</span>
+			</a>
+			<a class="mui-tab-item" href="about.html">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">关于</span>
+			</a>
+		</nav>
+		<div class="mui-content" id="content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-collapse ">
+					<a class="mui-navigate-right" href="#">
+						原生导航栏titleNView
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/titleNView.html">
+								默认导航栏
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/titleNView-transparent.html">
+								透明渐变导航栏
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/titleNView-btns.html">
+								包含自定义按钮的导航栏
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right" href="#">
+						下拉刷新
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/pullrefresh.html">
+								默认下拉刷新
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/pullrefresh-custorm.html">
+								自定义下拉刷新
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mui-table-view-cell mui-collapse ">
+					<a class="mui-navigate-right" href="#">
+						去wap化展现
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/server-not-generate.php">
+								M站自动不生成
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/server-hide.html">
+								M站自动隐藏
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/client-append.html">
+								客户端注入css隐藏
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mui-table-view-cell mui-collapse ">
+					<a class="mui-navigate-right" href="#">
+						优化back按键
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/popup.html">
+								关闭弹出层
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/page1.html">
+								改变页面回退逻辑
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mui-table-view-cell mui-collapse ">
+					<a class="mui-navigate-right" href="#">
+						优化窗体切换体验
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/animation.html">
+								窗口打开动画
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/waiting.html">
+								加载中处理
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mui-table-view-cell mui-collapse ">
+					<a class="mui-navigate-right" href="#">
+						NView模板
+					</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/listview.php">
+								复用前页数据
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="examples/ajax-nview.html">
+								ajax获取服务端数据
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="examples/fullScreen.html">
+						视频全屏播放
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="examples/geolocation.html">
+						原生定位
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="examples/push.html">
+						原生推送
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			if(mui.os.android) {
+				mui.plusReady(function() {
+					plus.key.removeEventListener('backbutton', function() {
+						console.log('delete listener');
+					})
+				})
+			} else {
+				mui.back = function() {
+					history.back();
+				}
+			}
+		</script>
+	</body>
+
+</html>

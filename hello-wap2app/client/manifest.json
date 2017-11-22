@@ -79,12 +79,12 @@
 		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
 		"distribute": {
-			"plugins": {"maps":{"amap":{"appkey_ios":"7a37a263999ce24b6af730db148f3623","appkey_android":"fd557eeb7f675c70dc6f49f1125bcba8","description":""}},
+			"plugins": {"maps":{"baidu":{"appkey_ios":"DoFO1pv1NbF6YNNmuTrGSD3HBXEDEBS8","appkey_android":"ztiTo1EDCbQHIsnIeOyFzrG8x5xue8CI","appkey":"","description":""}},
 				"push": {
 					"igexin": {
-						"appid": "819Q09riMvA3CFGGix5uz9",
-						"appkey": "QPd8aGxQaW6uHYtJvZHzg3",
-						"appsecret": "rpzfZrTrmV8B7tqdcNctR8"
+						"appid": "nvMicirNk16ZOaDTusNmPA",
+						"appkey": "e6kJ0shrk16nqx2lBe2Zh6",
+						"appsecret": "7HAzBb1pCr6Yf8J4bIwVv7"
 					}
 				}
 			},

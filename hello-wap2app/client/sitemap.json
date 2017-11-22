@@ -90,7 +90,7 @@
 					"buttons": [
 						{
 							"float": "right",
-							"fontSrc": "_www/fonts/mui.ttf",
+							"fontSrc": "_www/fonts/wap2app.ttf",   // 引用本地字体文件
 							"fontSize": "23px",
 							"text": "\uE466",
 							"onclick": "javascript:plus.webview.getWebviewById('titleNView-btns').evalJS('document.querySelector(\\'.mui-icon-search\\')&&document.querySelector(\\'.mui-icon-search\\').click()')"
@@ -298,13 +298,13 @@
 					"buttons": [
 						{
 							"float": "right",
-							"fontSrc": "_www/fonts/iconfont.ttf",
+							"fontSrc": "__wap2app.ttf",   // 框架内置ttf文件
 							"fontSize": "23px",
 							"text": "\uE602",
 							"onclick": "javascript:plus.webview.getWebviewById('nviewAjaxGoods').evalJS('document.querySelector(\\'.J-btn-share\\')&&document.querySelector(\\'.J-btn-share\\').click()')"
 						}, {
 							"float": "right",
-							"fontSrc": "_www/fonts/iconfont.ttf",
+							"fontSrc": "__wap2app.ttf",
 							"fontSize": "23px",
 							"text": "\uE604",
 							"onclick": "javascript:plus.webview.getWebviewById('nviewAjaxGoods').evalJS('document.querySelector(\\'#J-collect-btn\\')&&document.querySelector(\\'#J-collect-btn\\').click()')"
@@ -331,13 +331,13 @@
 					"buttons": [
 						{
 							"float": "right",
-							"fontSrc": "_www/fonts/iconfont.ttf",
+							"fontSrc": "__wap2app.ttf",
 							"fontSize": "23px",
 							"text": "\uE602",
 							"onclick": "javascript:plus.webview.getWebviewById('nviewAjaxDetail').evalJS('document.querySelector(\\'.J-btn-share\\')&&document.querySelector(\\'.J-btn-share\\').click()')"
 						}, {
 							"float": "right",
-							"fontSrc": "_www/fonts/iconfont.ttf",
+							"fontSrc": "__wap2app.ttf",
 							"fontSize": "23px",
 							"text": "\uE604",
 							"onclick": "javascript:plus.webview.getWebviewById('nviewAjaxDetail').evalJS('document.querySelector(\\'.J-detail-collect-btn\\')&&document.querySelector(\\'.J-detail-collect-btn\\').click()')"

@@ -14,7 +14,6 @@
 	module.exports = {
 		init: function(url) {
 			var self = this;
-			
 			wap2app.getFromCache('detail_cache', function(cacheData) {
 				if(cacheData){
 					self.setData(cacheData);						

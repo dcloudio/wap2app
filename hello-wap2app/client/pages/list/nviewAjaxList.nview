@@ -3,35 +3,35 @@
 		<nview  style={{width: '100%',height: 0.96 * data.rem+0.5, left: '0px',backgroundColor: '#ffffff'}}>
 			<canvas>
 				<span style={{width: '100%',height:1,color:'#e4e3e6',left:0,top:.96 * data.rem-0.5}} />
-				<font style={{left:0.69*data.rem,top:0.268*data.rem,size: .37333 * data.rem,width:.373*data.rem,height:.4 * data.rem, color: '#222', align: 'center',verticalAlign:'bottom', fontSrc: '_www/fonts/8b4f05d1.icomoon.ttf'}}>
-					{data.circle}
+				<font style={{left:0.69*data.rem,top:0.27*data.rem,size: .37333 * data.rem,width:.373*data.rem,height:.45 * data.rem, color: '#222', align: 'center',verticalAlign:'bottom', fontSrc: '_www/fonts/wap2app.ttf'}}>
+					&#xe580;
 				</font>
 				<font style={{height: .45 * data.rem,top:0.245*data.rem,width: 1.6 * data.rem,left: 1.12 * data.rem,size: .4 * data.rem,color: '#222',align: 'center'}}>
 					有货商品
 				</font>
 				<span style={{width: 1,height:.96*data.rem,color:'#e4e3e6',left:data.width*.34-1,top:0}} />
-	            <font style={{top: .32*data.rem,left: (data.width*.34 + 0.59 * data.rem),size: .27333 * data.rem,width:.2558*data.rem,height:.1356 * data.rem, color: '#222', align: 'center',fontSrc: '_www/fonts/iconfonthaha.ttf'}}>
-					&#xe641;
+	            <font style={{top: .32*data.rem,left: (data.width*.34 + 0.59 * data.rem),size: .27333 * data.rem,width:.2558*data.rem,height:.1356 * data.rem, color: '#222', align: 'center',fontSrc: '_www/fonts/wap2app.ttf'}}>
+					&#xe585;
 				</font>
-	            <font style={{top: 0.52*data.rem,left: (data.width*.34 + 0.58 * data.rem),size: .27333 * data.rem,width:.2558*data.rem,height:.1256 * data.rem,weight:'normal', color: '#222', align: 'center',fontSrc: '_www/fonts/iconfonthaha.ttf'}}>
-					 &#xe601;
+	            <font style={{top: 0.52*data.rem,left: (data.width*.34 + 0.58 * data.rem),size: .27333 * data.rem,width:.2558*data.rem,height:.1256 * data.rem,weight:'normal', color: '#222', align: 'center',fontSrc: '_www/fonts/wap2app.ttf'}}>
+					 &#xe584;
 				</font>
 				<font style={{height: .45 * data.rem,top:0.245*data.rem,width: .8 * data.rem,left: (data.width*.34 + 0.88 * data.rem),size: .4 * data.rem,color: '#222',align: 'center'}}>
 					价格
 				</font>
 				<span style={{width: 1,height:.96*data.rem,color:'#e4e3e6',left:data.width*.56-1,top:0}} />
-	            <font style={{top: .32*data.rem,left: (data.width*.56 + 0.59 * data.rem),size: .27333 * data.rem,width:.2558*data.rem,height:.1356 * data.rem, color: '#222', align: 'center',fontSrc: '_www/fonts/iconfonthaha.ttf'}}>
-					&#xe641;
+	            <font style={{top: .32*data.rem,left: (data.width*.56 + 0.59 * data.rem),size: .27333 * data.rem,width:.2558*data.rem,height:.1356 * data.rem, color: '#222', align: 'center',fontSrc: '_www/fonts/wap2app.ttf'}}>
+					&#xe585;
 				</font>
-	            <font style={{top: 0.52*data.rem,left: (data.width*.56 + 0.58 * data.rem),size: .27333 * data.rem,width:.2558*data.rem,height:.1256 * data.rem,weight:'normal', color: '#222', align: 'center',fontSrc: '_www/fonts/iconfonthaha.ttf'}}>
-					  &#xe601;
+	            <font style={{top: 0.52*data.rem,left: (data.width*.56 + 0.58 * data.rem),size: .27333 * data.rem,width:.2558*data.rem,height:.1256 * data.rem,weight:'normal', color: '#222', align: 'center',fontSrc: '_www/fonts/wap2app.ttf'}}>
+					  &#xe584;
 				</font>
 				<font style={{height: .45 * data.rem,top:0.245*data.rem,width: .8 * data.rem,left: (data.width*.56 + 0.9 * data.rem),size: .4 * data.rem,color: '#222',align: 'center'}}>
 					折扣
 				</font>
 				<span style={{width: 1,height:.96*data.rem,color:'#e4e3e6',left:data.width*.78-1,top:0}} />
-	            <font style={{top: 0.265*data.rem,left: (data.width*.78 + 0.47 * data.rem),size: .32 * data.rem,width:.373*data.rem,height:.373 * data.rem, color: '#222', align: 'center', fontSrc: '_www/fonts/8b4f05d1.icomoon.ttf'}}>
-					{data.filter}
+	            <font style={{top: 0.35*data.rem,left: (data.width*.78 + 0.47 * data.rem),size: .32 * data.rem,width:.373*data.rem,height:.373 * data.rem, color: '#222', align: 'center', fontSrc: '_www/fonts/wap2app.ttf'}}>
+					&#xe581;
 				</font>
 				<font style={{height: .45 * data.rem,top:0.245*data.rem,width: .8 * data.rem,left: (data.width*.78 + 0.92 * data.rem),size: .4 * data.rem,color: '#222',align: 'center'}}>
 					筛选
@@ -67,8 +67,6 @@
 				width = 540
 			}
 			return {
-				circle: '\uE009',
-				filter: '\uE013',
 				width: width,
 				rem: width / 10,
 				lists:[]

@@ -55,7 +55,7 @@
 				<li>原生下载引导</li>
 				<li>底部ICP备案信息</li>
 			</ul>
-			<p>M站根据UA信息判断，发现在流应用环境下，不输出这些DOM节点，用户也就看不到如上三种元素</p>
+			<p>M站根据UA信息判断，发现在 wap2app 环境下，不输出这些DOM节点，用户也就看不到如上三种元素</p>
 		</div>
 	</body>
 	<script src="../js/app.js" type="text/javascript" charset="utf-8"></script>

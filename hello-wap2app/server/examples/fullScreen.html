@@ -10,9 +10,27 @@
 			.mui-content {
 				margin: 20px;
 			}
+			
 			#video {
 				width: 100%;
 				margin-top: 40px;
+			}
+			.mui-list-unstyled p {
+				margin:0;
+			}
+			.mui-list-unstyled {
+				padding-left: 20px;
+				margin:0;
+			}
+			 /*隐藏播放器下载按钮*/
+			video::-internal-media-controls-download-button {
+				display: none;
+			}
+			video::-webkit-media-controls-enclosure {
+				overflow: hidden;
+			}
+			video::-webkit-media-controls-panel {
+				width: calc(100% + 30px);
 			}
 		</style>
 	</head>
@@ -23,8 +41,18 @@
 			<h1 class="mui-title">视频全屏播放-示例</h1>
 		</header>
 		<div class="mui-content">
-			<p>这是视频全屏播放示例页面,wap2app示例中打开此页面，点击全屏按钮会横屏播放视频</p>
-			<video id="video" controls="controls" preload="auto"  poster="//img.cdn.qiniu.dcloud.net.cn/wap2app_poster.png">
+			<p>这是视频全屏播放示例页面,wap2app示例中打开此页面，点击全屏按钮会横屏播放视频，<a href="http://ask.dcloud.net.cn/article/12933" target="_blank">wap2app 实现视屏全屏播放教程</a></p>
+			<p>注：iOS应用上实现此效果需注意在manifest.json -> plus -> orientation 节点配置需要支持的应用屏幕方向信息，默认只支持竖屏正方向</p>
+			<br/>
+			<p style="margin-bottom: 0;">orientation节点参考配置信息如下: </p>
+			<ul class="mui-list-unstyled">
+				<li><p>"portrait-primary": 竖屏正方向</p></li>
+				<li><p>"portrait-secondary": 竖屏反方向</p></li>
+				<li><p>"landscape-primary": 横屏正方向</p></li>
+				<li><p>"landscape-secondary": 横屏反方向</p></li>
+			</ul>
+			
+			<video id="video" controls="controls" preload="auto" poster="//img.cdn.qiniu.dcloud.net.cn/wap2app_poster.png">
 				<source src="//img.cdn.qiniu.dcloud.net.cn/wap2appvsnative.mp4" type="video/mp4"></source>
 			</video>
 		</div>

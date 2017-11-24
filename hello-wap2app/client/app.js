@@ -4,7 +4,7 @@
 
 App({
 	options: {
-		debug: true // 是否开启调试模式，默认为false
+		debug: false // 是否开启调试模式，默认为false
 	},
 	/**
 	 * 生命周期函数，当wap2app初始化完成时，会触发 onLaunch（全局只触发一次）

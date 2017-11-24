@@ -8,7 +8,7 @@
 	"name": "hello wap2app",/*应用名称，程序桌面图标名称*/
 	"version": {
 		"name": "0.1.0",/*应用版本名称*/
-		"code": ""
+		"code": "27"
 	},
 	"description": "wap2app各功能配置示例",/*应用描述信息*/
 	"icons": {
@@ -67,19 +67,24 @@
 			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
 			"waiting": true
 		},
-		"statusbar": {
-			"style": "dark"
-		},
 		"secondwebview": {
 			"statusbar": {
-				"background":"#f7f7f7"
+				"background": "#f7f7f7"
 			}
 		},
 		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
-		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
 		"distribute": {
-			"plugins": {"maps":{"baidu":{"appkey_ios":"DoFO1pv1NbF6YNNmuTrGSD3HBXEDEBS8","appkey_android":"ztiTo1EDCbQHIsnIeOyFzrG8x5xue8CI","appkey":"","description":""}},
+			"plugins": {
+				"maps": {
+					"baidu": {
+						"appkey_ios": "DoFO1pv1NbF6YNNmuTrGSD3HBXEDEBS8",
+						"appkey_android": "ztiTo1EDCbQHIsnIeOyFzrG8x5xue8CI",
+						"appkey": "",
+						"description": ""
+					}
+				},
 				"push": {
 					"igexin": {
 						"appid": "nvMicirNk16ZOaDTusNmPA",
@@ -131,12 +136,15 @@
 				]
 			},
 			"orientation": [
-				"portrait-primary"
+				"portrait-primary",
+				"portrait-secondary",
+				"landscape-primary",
+				"landscape-secondary"
 			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
 			"icons": {
 				"ios": {
 					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
-					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					 /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
 					"iphone": {
 						"normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
 						"retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
@@ -147,7 +155,7 @@
 						"spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
 						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
 						"settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
-						"settings-retina8": "unpackage/res/icons/87x87.png"
+						"settings-retina8": "unpackage/res/icons/87x87.png","spotlight@3x":"unpackage/res/icons/120x120.png","notification@2x":"unpackage/res/icons/40x40.png","notification@3x":"unpackage/res/icons/60x60.png"
 					},
 					"ipad": {
 						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
@@ -159,8 +167,8 @@
 						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
 						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
 						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
-						"settings-retina": "unpackage/res/icons/58x58.png"
-					}
+						"settings-retina": "unpackage/res/icons/58x58.png","proapp@2x":"unpackage/res/icons/167x167.png","notification":"unpackage/res/icons/20x20.png","notification@2x":"unpackage/res/icons/40x40.png"
+					},"appstore":"unpackage/res/icons/1024x1024.png"
 				},
 				"android": {
 					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
@@ -175,11 +183,13 @@
 				"ios": {
 					"iphone": {
 						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
-						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
-						"retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
-						"retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
-						"retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
-						"retina55l": ""
+						"retina35": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/640x960.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/640x1136.png",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/750x1334.png",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/1242x2208.png",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/2208x1242.png",
+						"iphonex": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/1125x2436.png",
+						"iphonexl": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/2436x1125.png"
 					},
 					"ipad": {
 						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
@@ -195,35 +205,36 @@
 				"android": {
 					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
 					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
-					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": ""
+					"hdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/480.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/720.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/1080.png"
 				}
-			}
+			},
+			"debug": true
 		}
 	},
 	"dependencies": {
-	  "pages": {
-	    "client_index.html": {
-	      "resources": [],
-	      "refer": [],
-	      "priority": 0
-	    }
-	  },
-	  "idle": {
-	    "resources": [
-	      "pages/detail/detail.nview",
-	      "pages/list/nviewAjaxList.nview",
-	      "js/list.js",
-	      "sitemap.json",
-	      "js/full-screen.js",
-	      "fonts/mui.ttf",
-	      "fonts/iconfont.ttf",
-	      "__W2A__hello.wap2app.dcloud.io.append.css",
-	      "pages/list/nviewAjaxIndex.nview",
-	      "pages/list/nviewAjaxImageSlider.nview",
-	      "app.js"
-	    ]
-	  }
+		"pages": {
+			"client_index.html": {
+				"resources": [],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"pages/detail/detail.nview",
+				"pages/list/nviewAjaxList.nview",
+				"js/list.js",
+				"sitemap.json",
+				"js/full-screen.js",
+				"fonts/mui.ttf",
+				"fonts/iconfont.ttf",
+				"__W2A__hello.wap2app.dcloud.io.append.css",
+				"pages/list/nviewAjaxIndex.nview",
+				"pages/list/nviewAjaxImageSlider.nview",
+				"app.js"
+			]
+		}
 	}
 }

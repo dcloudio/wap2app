@@ -251,7 +251,7 @@
 					"waiting": false
 				}
 			}
-		}, {// 复用前页数据 - NView模板页  注：此页面wap站集成了原生分享
+		}, {// 复用前页数据 - NView模板页  
 			"webviewId": "nviewsDetail",
 			"matchUrls": [
 				{
@@ -262,7 +262,8 @@
 				"titleNView": {
 					"titleText": "新闻详情"
 				},
-				"subNViews": "pages/detail/detail.nview"
+				"subNViews": "pages/detail/detail.nview",
+				"appendCss":"#share{display:none!important;}"
 			}
 		}, {// ajax获取服务端数据 - 列表页
 			"webviewId": "nviewAjax",
@@ -374,12 +375,12 @@
 					"pathname": "/examples/push.html"
 				}
 			]
-		}, {//未适配的公共页面，可拦截原生下载和头部导航栏, 注：通配符的规则+放在最后一个节点才能达到适配所有未适配的公共页面效果，适配规则优先级为自上而下查找匹配规则
+		},{//未适配的公共页面，可拦截原生下载和头部导航栏, 注：通配符的规则+放在最后一个节点才能达到适配所有未适配的公共页面效果，适配规则优先级为自上而下查找匹配规则
 			"webviewId": "common",
 			"matchUrls": [
 				{
-					"hostname": "W:.*",
-					"pathname": "W:.*"
+					"hostname": "R:.*",
+					"pathname": "R:.*"
 				}
 			]
 		}

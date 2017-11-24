@@ -76,7 +76,7 @@
 		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
 		"distribute": {
-			"plugins": {
+			"plugins": {"share":{"weixin":{"appid":"wx02f2682d7e142bbb","appsecret":"9da03e012697616e3462931e1b9fdefb","description":"可选，微信分享"}},
 				"maps": {
 					"baidu": {
 						"appkey_ios": "DoFO1pv1NbF6YNNmuTrGSD3HBXEDEBS8",
@@ -183,13 +183,13 @@
 				"ios": {
 					"iphone": {
 						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
-						"retina35": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/640x960.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
-						"retina40": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/640x1136.png",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
-						"retina47": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/750x1334.png",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
-						"retina55": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/1242x2208.png",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
-						"retina55l": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/2208x1242.png",
-						"iphonex": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/1125x2436.png",
-						"iphonexl": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/2436x1125.png"
+						"retina35": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/640x960.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/640x1136.png",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/750x1334.png",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/1242x2208.png",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/2208x1242.png",
+						"iphonex": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/1125x2436.png",
+						"iphonexl": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/2436x1125.png"
 					},
 					"ipad": {
 						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
@@ -205,9 +205,9 @@
 				"android": {
 					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
 					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
-					"hdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/480.png", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/720.png", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/启动splash/1080.png"
+					"hdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/480.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/720.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "/Volumes/D/Dcloud/update_project/hello wap2app/屏幕快照/启动splash/1080.png"
 				}
 			},
 			"debug": true

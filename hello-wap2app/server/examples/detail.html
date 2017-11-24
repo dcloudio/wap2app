@@ -77,12 +77,21 @@
 			 */
 			document.getElementById("share").addEventListener("click", function() {
 				if(navigator.userAgent.indexOf("Html5Plus") > -1) {
+					// 注：ios上分享图片大小不得超过100KB。否则会分享失败
+					var imgDom = document.querySelector('#kr-article-cover img'),
+						imgPath = '';
+						
+					if(imgDom && imgDom.src) {
+						imgPath = imgDom.src;
+					}else {
+						imgPath = "http://img.cdn.qiniu.dcloud.net.cn/wap2appLogo.png" // 应用logo地址
+					}
 					//5+ 原生分享
 					window.plusShare({
-						title: "hello-wap2app", //应用名字
-						content: "将M站快速转换成App的开发框架 - DCloud", //分享内容
+						title: document.title, //标题
+						content: 'wap2app - 是一个免费的前端框架，可以将H5网站快速转换成原生般体验的App。', //分享内容或者应用描述
 						href: location.href, //分享出去后，点击跳转的地址
-						thumbs: ["http://img.cdn.qiniu.dcloud.net.cn/wap2appLogo.png"] //分享缩略图
+						thumbs: [imgPath] //分享缩略图
 					}, function(result) {
 						//分享回调函数
 						if(res) {

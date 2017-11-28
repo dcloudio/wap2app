@@ -4,7 +4,7 @@
 
 App({
 	options: {
-		debug: true // 是否开启调试模式，默认为false
+		debug: false // 是否开启调试模式，默认为false
 	},
 	/**
 	 * 生命周期函数，当wap2app初始化完成时，会触发 onLaunch（全局只触发一次）
@@ -109,26 +109,3 @@ Page('pullToRefresh-custorm', { // 自定义下拉刷新
 
 	}
 });
-
-Page('nviewsDetail', {
-	options: {
-		share: function() {
-			var imgDom = document.querySelector('#kr-article-cover img'),
-						imgPath = '';
-						
-					if(imgDom && imgDom.src) {
-						imgPath = imgDom.src;
-					}else {
-						imgPath = "http://img.cdn.qiniu.dcloud.net.cn/wap2appLogo.png" // 应用logo地址
-					}
-			var obj = {
-				title: document.title, //标题
-				content: "wap2app - 是一个免费的前端框架，可以将H5网站快速转换成原生般体验的App。", //分享内容
-				href: 'http://hello.wap2app.dcloud.io/examples/detail.html?guid=5103834', //分享出去后，点击跳转的地址
-				thumbs: [imgPath] //分享缩略图
-			};
-			
-			return obj;
-		}
-	}
-})

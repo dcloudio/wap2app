@@ -1,1 +1,0 @@
-hello wap2app的服务端演示代码。

@@ -3,15 +3,15 @@
 		"webviewParameter": {
 			"titleNView": {
 				"autoBackButton": true,
-				"backgroundColor": "#f7f7f7",//导航栏背景色
-				"titleColor": "#000000",//标题颜色
+				"backgroundColor": "#D74B28",//导航栏背景色
+				"titleColor": "#f7f7f7",//标题颜色
 				"titleSize": "17px",//字体大小
 				"splitLine": {//标题栏的底部分割线，默认不显示底部分割线
-					"color": "#CCCCCC", //分割线颜色
+					"color": "#D74B28", //分割线颜色
 					"height": "1px"
 				}
 			},
-			"appendCss": ".download,.mui-bar-tab,header{display:none!important;} .mui-bar-nav~.mui-content,.info{padding-top: 0!important;}" // webview注入css代码或者文件路径，文件路径例如：'css/preload.css'
+			"appendCss": ".download,.mui-bar-tab,header{display:none!important;} .mui-bar-nav~.mui-content,.info{padding-top: 0!important;}"
 		},
 		"easyConfig": {
 			"quit": {// 参考文档 【http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/12750】 quit
@@ -40,9 +40,7 @@
 					"height": "51px",//选项卡高度，默认为50px
 					"list": [
 						{
-							"url": "http://hello.wap2app.dcloud.io/"
-						}, {
-							"url": "http://hello.wap2app.dcloud.io/list.html"
+							"url": "http://hello.wap2app.dcloud.io"
 						}, {
 							"url": "http://hello.wap2app.dcloud.io/about.html"
 						}
@@ -191,7 +189,7 @@
 				"titleNView": {
 					"titleText": "客户端注入css"
 				},
-				"appendCss": ".mui-bar-nav,.download,.mui-bar-footer{display:none!important;}"
+				"appendCss": ".mui-bar-nav,.download,.mui-bar-footer{display:none!important;} .mui-bar-nav~.mui-content{padding-top: 0!important;}"
 			}
 		}, {// 关闭弹出层
 			"webviewId": "popup",
@@ -320,12 +318,7 @@
 			"webviewParameter": {
 				"titleNView": {
 					"titleText": "原生轮播图",
-					"backgroundColor": "#FFFFFF",
 					"type": "transparent",
-					"splitLine": {
-						"height": 0,
-						"color": "#FFFFFF"
-					},
 					"buttons": [
 						{
 							"float": "right",

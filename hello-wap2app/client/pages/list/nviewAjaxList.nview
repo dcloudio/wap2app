@@ -46,7 +46,7 @@
 		<nview style={{backgroundColor:'#ffffff',height:9*data.rem*(data.lists.length/2)}}>
 			<list style={{columnCount:2}}>
 				<item n-for="list in data.lists" style={{height:9*data.rem}}>
-					<canvas>
+					<canvas onclick={this.openDetail}>
 						<img src={list.img} style={{width:'96%',left:'2%',height:6*data.rem}}/>
 						<font style={{height:.90667*data.rem,left:.13333*data.rem,right:.13333*data.rem,top:6.18667*data.rem,color:'#000',size:.32*data.rem,textOverflow:'ellipsis',whiteSpace:'normal',align:'left'}}>{list.title}</font>
 						<font style={{height:.4*data.rem,left:.13333*data.rem,width:.83*data.rem,top:7.09334*data.rem,color:'#e80080',size:.37333*data.rem}}>{list.grallyprice}</font>
@@ -86,7 +86,10 @@
             })
 		},
 		methods: {
-			//方法
+			//点击事件触发打开新窗口示例
+			openDetail: function() {
+			  wap2app.open('http://hello.wap2app.dcloud.io/examples/nview-detail.html');
+			}
 		}
 	};
 </script>

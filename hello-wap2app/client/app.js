@@ -59,7 +59,6 @@ App({
 			alert("receive: " + msg.content);
 		}, false);
 		/******推送消息监听代码结束******/
-
 	},
 	/**
 	 * 生命周期函数，当wap2app启动，或从后台进入前台显示，会触发 onShow

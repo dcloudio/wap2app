@@ -11,7 +11,7 @@
 					"height": "1px"
 				}
 			},
-			"appendCss": ".download,.mui-bar-tab,header{display:none!important;} .mui-bar-nav~.mui-content,.info{padding-top: 0!important;}"
+			"appendCss": ".download,.mui-bar-tab,header{display:none!important;} .mui-bar-nav~.mui-content,.info,.dcontent{padding-top: 0!important;} .sdcontent{top:0!important;}"
 		},
 		"easyConfig": {
 			"quit": {// 参考文档 【http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/12750】 quit
@@ -377,7 +377,31 @@
 					"titleText":"微信支付"  
 				}
 			}
-		},{//未适配的公共页面，可拦截原生下载和头部导航栏, 注：通配符的规则+放在最后一个节点才能达到适配所有未适配的公共页面效果，适配规则优先级为自上而下查找匹配规则
+		},{// 二维码扫描
+			"webviewId": "barcode",
+			"matchUrls": [
+				{
+					"pathname": "/examples/barcode_scan.html"
+				}
+			],
+			"webviewParameter": {
+				"titleNView": {
+					"titleText":"二维码扫描"
+				}
+			}
+		},{// 语音识别
+			"webviewId": "speech",
+			"matchUrls": [
+				{
+					"pathname": "/examples/speech.html"
+				}
+			],
+			"webviewParameter": {
+				"titleNView": {
+					"titleText":"语音识别"
+				}
+			}
+		}, {//未适配的公共页面，可拦截原生下载和头部导航栏, 注：通配符的规则+放在最后一个节点才能达到适配所有未适配的公共页面效果，适配规则优先级为自上而下查找匹配规则
 			"webviewId": "common",
 			"matchUrls": [
 				{

@@ -5,10 +5,10 @@
 		"iPad"
 	],
 	"id": "__W2A__hello.wap2app.dcloud.io",/*应用的标识，创建应用时自动生成，勿手动修改*/
-	"name": "hello wap2app",/*应用名称，程序桌面图标名称*/
+	"name": "helloW2A",/*应用名称，程序桌面图标名称*/
 	"version": {
-		"name": "0.1.1",/*应用版本名称*/
-		"code": "27"
+		"name": "0.2.0",/*应用版本名称*/
+		"code": "30"
 	},
 	"description": "wap2app各功能配置示例",/*应用描述信息*/
 	"icons": {

@@ -45,7 +45,7 @@ App({
 				//payload是一个json对象，可以传递业务数据，开发者可以根据实际需求自定义参数
 				//本示例在payload中传入新闻id，wap2app接收到推送后，直接打开新闻详情
 				if(msg.payload.id) {
-					var detailId = msg.payload;
+					var detailId = msg.payload.id;
 					//wap2app.open(url)可以直接打开对应的webview
 					//这里是示例，实际项目中开发者需根据M站的url拼接页面地址
 					wap2app.open('http://hello.wap2app.dcloud.io/examples/detail.html?guid=' + detailId);

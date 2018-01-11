@@ -2,7 +2,7 @@
 .mui-bar-tab,
 .copyright
  {
-	display: none;
+	display: none!important;
 }
 
 .mui-bar-nav~.mui-content {

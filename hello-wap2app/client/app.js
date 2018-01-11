@@ -79,7 +79,7 @@ App({
  */
 Page('__W2A__hello.wap2app.dcloud.io', { //首页扩展配置
 	onShow: function() {
-
+		
 	},
 	onClose: function() {
 

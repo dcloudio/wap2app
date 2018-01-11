@@ -11,7 +11,7 @@
 					"height": "1px"
 				}
 			},
-			"appendCss": ".download,.mui-bar-tab,header{display:none!important;} .mui-bar-nav~.mui-content,.info,.dcontent{padding-top: 0!important;} .sdcontent{top:0!important;}"
+			"appendCss": ".download,.mui-bar-tab,header{display:none!important;} .mui-bar-nav~.mui-content,.info,.dcontent{padding-top: 0!important;} .sdcontent{top:0!important;} "
 		},
 		"easyConfig": {
 			"quit": {// 参考文档 【http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/12750】 quit
@@ -365,7 +365,8 @@
 					"pathname": "/examples/push.html"
 				}
 			]
-		}, {// 打开第三方支付
+		}, 
+		{// 打开第三方支付
 			"webviewId": "pay", // 参考文档【manifest.json中支付SDK配置指南 该wap站使用的是微信H5支付】(http://ask.dcloud.net.cn/article/71)
 			"matchUrls": [		// 参考服务端代码【微信支付v3】(https://github.com/dcloudio/H5P.Server/tree/master/payment/wxpayv3)
 				{
@@ -377,7 +378,8 @@
 					"titleText":"微信支付"  
 				}
 			}
-		},{// 二维码扫描
+		},
+		{// 二维码扫描
 			"webviewId": "barcode",
 			"matchUrls": [
 				{
@@ -399,6 +401,18 @@
 			"webviewParameter": {
 				"titleNView": {
 					"titleText":"语音识别"
+				}
+			}
+		}, {// 图片长按保存
+			"webviewId": "longTap",
+			"matchUrls": [
+				{
+					"pathname": "/examples/longTap.html"
+				}
+			],
+			"webviewParameter": {
+				"titleNView": {
+					"titleText":"图片长按保存"
 				}
 			}
 		}, {//未适配的公共页面，可拦截原生下载和头部导航栏, 注：通配符的规则+放在最后一个节点才能达到适配所有未适配的公共页面效果，适配规则优先级为自上而下查找匹配规则

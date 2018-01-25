@@ -21,46 +21,20 @@
 		"url": ""
 	},
 	"permissions": {
-		"Accelerometer": {},
-		"Audio": {},
 		"Messaging": {},
 		"Cache": {
 			"description": "管理应用缓存"
 		},
-		"Camera": {},
 		"Console": {
 			"description": "跟踪调试输出日志"
 		},
 		"Contacts": {},
-		"Device": {},
-		"Downloader": {},
 		"Events": {
 			"description": "应用扩展事件"
 		},
-		"File": {},
-		"Gallery": {},
-		"Geolocation": {},
-		"Invocation": {},
-		"Orientation": {},
-		"Proximity": {},
-		"Storage": {},
-
-		"Uploader": {},
-		"Runtime": {},
-		"XMLHttpRequest": {},
-		"Zip": {},
-		"Barcode": {},
-
 		"Speech": {},
-		"Webview": {},
-		"NativeUI": {},
-		"Navigator": {},
-		"NativeObj": {},
-
-
 		"OAuth": {},
 		"Payment": {},
-
 		"Share": {},
 		"Maps": {},
 		"Statistic": {},
